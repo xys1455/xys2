@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zn-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人官网</title>
+    <style>
+        body{
+            margin: 0;
+            height: 100vh;
+            background-color: #eee;
+        }
+        .flex{
+            display: flex;
+        }
+        .bs{
+            background-color: white;
+        }
+        .flex1{
+            flex:1;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .mg8{
+            margin: 8px;
+        }
+        .mgr8{
+            margin-right: 8px;
+        }
+        .mgt8{
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body class="flex">
+    <!-- 侧边栏 -->
+    <div style="z-index: 2;" class="flex flex1 bs column">
+        <!-- 头像栏 -->
+        <div style="padding: 10px;align-items: center;justify-content: center;border-bottom: 1px solid #999;" class="flex">
+            <img src="./ss.png" alt="头像" width="40" height="40">
+            <div style="margin-left: 10px;">A 仙天·主界</div>
+        </div>
+        <!-- 导航栏 -->
+        <div class="flex1">
+            <div>首页</div>
+            <div>首页</div>
+            <div>首页</div>
+            <div>首页</div>
+            <div>首页</div>
+            <div>首页</div>
+            <div>首页</div>
+            <div>首页</div>
+            <div>首页</div>
+            <div>首页</div>
+        </div>
+    </div>
+    <!-- 主区域 -->
+    <div style="flex: 6;" class="flex column">
+        <!-- 头部栏 -->
+        <div style="height: 60px;z-index: 1;" class="bs flex">
+            <div style="align-items: center;" class="flex flex1">网址复制：</div>
+            <div class="flex flex1"><input></div>
+        </div>
+        <!-- 内容区 -->
+        <div style="overflow: auto;" class="flex1 flex">
+            <!-- 左 -->
+            <div style="flex:4;" class="flex column mg8">
+             <!-- 数据区 -->
+             <div class="flex">
+                <!-- 数据块 -->
+                <div style="height: 150px;" class="flex1 bs mgr8"></div>
+                <div style="height: 150px;" class="flex1 bs mgr8"></div>
+                <div style="height: 150px;" class="flex1 bs mgr8"></div>
+                <div style="height: 150px;" class="flex1 bs"></div>
+             </div>
+             <!-- 列表区 -->
+             <div class="flex column">
+                <!-- 列表项 -->
+                <div style="height: 160px;" class=" bs mgt8">
+                    <a href="https://xys1455.github.io/xys/">我上线的第一个网址</a>
+                    <div>现在这个网页还有点空</div>
+                </div>
+                <div style="height: 160px;" class=" bs mgt8">
+                    
+                </div>
+                <div style="height: 160px;" class=" bs mgt8"></div>
+                <div style="height: 160px;" class=" bs mgt8"></div>
+                <div style="height: 160px;" class=" bs mgt8"></div>
+                <div style="height: 160px;" class=" bs mgt8"></div>
+             </div>
+            </div>
+            <!-- 右 -->
+            <div style="flex:1" class="flex column mgr8 mgt8">
+                <!-- 提示区 -->
+                <div style="height: 150px;" class="bs"></div>
+                <!-- 消息区 -->
+                <div style="height: 300px;" class="bs mgt8"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
