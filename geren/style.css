@@ -130,7 +130,7 @@ body {
   font-weight: 600;
   opacity: 0;
   animation: slideTop 1s ease forwards;
-  animation-delay: 2s
+  animation-delay: 2s;
 }
 @keyframes slideRight {
   0% {
@@ -183,13 +183,20 @@ body {
   }
 }
 @keyframes floatImage {
-    0%{
-        transform: translateY(0);
-    }
-    50%{
-        transform: translateY(-24px);
-    }
-    0%{
-        transform: translateY(0);
-    }
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-24px);
+  }
+  0% {
+    transform: translateY(0);
+  }
+}
+/* 最小宽高比 */
+@media (max-aspect-ratio: 8/5) {
+  section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
